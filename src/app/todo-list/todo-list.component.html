@@ -1,0 +1,5 @@
+<div>
+  <p *ngFor="let todo of todos">
+     <app-todo [data]="todo" (clicked)="todoClicked($event)"></app-todo>
+  </p>
+</div>
